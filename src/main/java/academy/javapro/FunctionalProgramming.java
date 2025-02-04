@@ -24,6 +24,9 @@ public class FunctionalProgramming {
         List<Integer> doubledNumbers = numbers.stream()
             // Write your code here
             .collect(Collectors.toList());
+            .map(n -> n * 2)
+
+        System.out.print("The double of each number of the original list: " + doubledNumbers);
 
         // TASK 3: Sum all numbers in doubledNumbers
         // TODO: Create a stream that sums all numbers
